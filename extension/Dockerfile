@@ -21,10 +21,11 @@ LABEL org.opencontainers.image.title="Zero" \
     com.docker.extension.publisher-url="https://aerabi.com" \
     com.docker.extension.additional-urls="[]" \
     com.docker.extension.changelog="" \
-    com.docker.desktop.extension.icon="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png"
+    com.docker.desktop.extension.icon="/img/Moby.png"
 
 COPY hello.sh .
 COPY metadata.json .
 COPY --from=client-builder /app/client/dist ui
+COPY img img
 
 CMD [ "sleep", "infinity" ]

@@ -1,5 +1,5 @@
 {
-  "icon": "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png",
+  "icon": "/img/Moby.png",
   "vm": {
     "image": "${DESKTOP_PLUGIN_IMAGE}"
   },
